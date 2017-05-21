@@ -23,9 +23,10 @@ namespace ToDoTestProject
 
             try
             {
-                OpenBrowser(data["BROWSER"]);
+                //OpenBrowser(data["BROWSER"]);
+                OpenBrowser("ie");
                 NavigateTo("http://todomvc.com");
-                Console.WriteLine("Browser : {0}, Item1 is : {1} and item2 is {2}", data["BROWSER"], data["ITEM1"], data["ITEM2"]);
+                
                 
             }
 

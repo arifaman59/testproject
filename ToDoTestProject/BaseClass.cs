@@ -40,13 +40,13 @@ namespace ToDoTestProject
             else if (browser.Equals("chrome"))
             {
                 test.Log(LogStatus.Info, "Opening browser");
-                driver = new ChromeDriver(ConfigurationManager.AppSettings["driverLocation"]);
+                driver = new ChromeDriver(FileLocation.DriverDir);
                 test.Log(LogStatus.Info, "Browser opened successfully");
             }
             else if (browser.Equals("ie"))
             {
                 test.Log(LogStatus.Info, "Opening browser");
-                driver = new InternetExplorerDriver(ConfigurationManager.AppSettings["driverLocation"]);
+                driver = new InternetExplorerDriver(FileLocation.DriverDir);
                 test.Log(LogStatus.Info, "Browser opened successfully");
             }
             else

@@ -61,6 +61,15 @@ namespace ToDoTestProject {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to G:\AllDrivers.
+        /// </summary>
+        internal static string DriverDir {
+            get {
+                return ResourceManager.GetString("DriverDir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to G:\ScreenShots\.
         /// </summary>
         internal static string ScreenShotDir {
