@@ -17,7 +17,7 @@ namespace ToDoTestProject
         public static string testCaseName = "ToDoTest";
 
         [Test, TestCaseSource("GetData")]
-        public void LoginTest(Dictionary<String, String> data)
+        public void TestToDo(Dictionary<String, String> data)
         {
             test = report.StartTest("ToDoTest", "Verifying the items have been added successfully functionality");
 
